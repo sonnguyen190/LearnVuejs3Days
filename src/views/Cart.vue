@@ -21,7 +21,7 @@
           <div>
             <div class="title_subtotal">Subtotal</div>
 
-            <b class="subtotal">${this.props.tong_tien}.00</b>
+            <b class="subtotal">${{ this.tongtien }}.00</b>
           </div>
           <hr />
           <div>
@@ -33,7 +33,7 @@
           <div>
             <div class="title_subtotal">Order Total</div>
 
-            <b class="subtotal">${this.props.tong_tien}.00</b>
+            <b class="subtotal">${{ this.tongtien }}.00</b>
           </div>
           <div class="price_cart">
             <div class="button_buy_cart">
@@ -61,7 +61,8 @@ export default {
   name: 'Cart',
   data() {
     return {
-      cart: []
+      cart: [],
+      tongtien: 0
     }
   },
   components: { ItemCart },
@@ -70,7 +71,7 @@ export default {
     if (listCart && listCart !== 'undefined' && listCart !== 'null') {
       this.cart = JSON.parse(listCart)
     }
-    console.log(this.cart)
+    this.handleTinhTongTien(this.cart)
   },
   methods: {
     handleTangSoLuong(item) {
@@ -87,12 +88,21 @@ export default {
       }
       this.cart = mang
       this.saveLocal(mang)
+      this.handleTinhTongTien(this.cart)
     },
     saveLocal(arr) {
       let data_save = JSON.stringify(arr)
       localStorage.setItem('cart', data_save)
+    },
+    handleTinhTongTien(mang) {
+      let tong = 0
+      for (var i = 0; i < mang.length; i++) {
+        tong += mang[i].price * mang[i].quantity
+      }
+      this.tongtien = tong
     }
-  }
+  },
+  emits: ['tangSoLuong']
 }
 </script>
 

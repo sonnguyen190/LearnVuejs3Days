@@ -32,36 +32,36 @@ export default {
         },
         {
           id: 2,
-          name: 'Chuck 70 High Top',
+          name: 'Chuck Taylor All Star Construct High Top',
           price: 100,
-          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/1/6/162050c_a_107x1_1.jpg',
+          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/a/0/a05094c_a_107x1.jpg',
           color: ['red', 'yellow', 'white', 'black'],
           size: [40, 41, 42, 43],
           quantity: 0
         },
         {
           id: 3,
-          name: 'Chuck 70 High Top',
+          name: 'Run Star Legacy CX High Top',
           price: 100,
-          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/1/6/162050c_a_107x1_1.jpg',
+          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/a/0/a00869c_a_107x1.jpg',
           color: ['red', 'yellow', 'white', 'black'],
           size: [40, 41, 42, 43],
           quantity: 0
         },
         {
           id: 4,
-          name: 'Chuck 70 High Top',
+          name: 'Run Star Hike Platform Seasonal Colour High Top',
           price: 100,
-          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/1/6/162050c_a_107x1_1.jpg',
+          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/a/0/a06157c_a_107x1.jpg',
           color: ['red', 'yellow', 'white', 'black'],
           size: [40, 41, 42, 43],
           quantity: 0
         },
         {
           id: 5,
-          name: 'Chuck 70 High Top',
+          name: 'Run Star Hike Platform Seasonal Colour High Top',
           price: 100,
-          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/1/6/162050c_a_107x1_1.jpg',
+          img: 'https://converse.ca/media/catalog/product/cache/1026c061effc1a20d56ae0b507d90a94/a/0/a01365c_a_107x1.jpg',
           color: ['red', 'yellow', 'white', 'black'],
           size: [40, 41, 42, 43],
           quantity: 0
